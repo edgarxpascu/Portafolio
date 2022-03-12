@@ -1,0 +1,74 @@
+/*Header*/
+.headerM .container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerM--nav{
+    display: flex;
+}
+
+.scrolling--wrapper{
+    align-items: center;
+    display: flex;
+}
+
+.scrolling--wrapper div{
+    display: flex;
+    flex-direction: column;
+    min-width: 110px;
+}
+
+/*Presentation*/
+.presentation{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.presentation--container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation--menu{ 
+    display: flex;
+    justify-content: center;
+}
+
+.presentation--menu a span:last-child {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Responsive*/
+/* For Small devices: */
+@media screen and (max-width: 640px){
+    .headerM .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .headerM--nav{
+        flex-direction: column;
+    }
+    .headerM--title{
+        order: 3;
+    }
+    
+}
+
+/* For Medium devices: */
+@media screen and (max-width: 1007px){
+    .headerM .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .headerM--title{
+        order: 3;
+    }
+    
+}
