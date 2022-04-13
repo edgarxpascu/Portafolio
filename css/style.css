@@ -1,82 +1,42 @@
+@import url(base.css);
+@import url(containers/header.css);
+@import url(containers/presentation.css);
+@import url(containers/formation.css);
+@import url(containers/aboutme.css);
+@import url(containers/contact.css);
+@import url(containers/footer.css);
+@import url(containers/proyects.css);
+
 body{
-    background: #DDE4E4;
-    color: #002A3D;
-    font-family: 'Montserrat', sans-serif;;
+    background: var(--base-color-b);
+    color: var(--base-color-l);
+    font-family: var(--font-family-body);
 }
 
-/*Header*/
-.headerM {
-    padding: 1rem 2rem 0 2rem;
-}
-
-.headerM--nav{
-    line-height: 3em;
-    font-weight: 400;
-    letter-spacing: .09em;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.headerM--item{
-    margin-right: 1.25em;
-}
-
-.headerM--nav--link{
-    color: inherit;
-    text-decoration: none;
-    padding: 5px;
-    position: relative;
-}
-
-.headerM--nav--link::before {
-    background: linear-gradient(to right, #9AD1D4, #007EA7, #9AD1D4);
-    bottom: 0;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;  
-    z-index: 1;    
-}
-  
-.headerM--nav--link:hover::before {
-    transform: scaleX(1);
-}
-
-.headerM--title{
-    color: transparent;
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1.5em;
-    letter-spacing: .11em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.headerM--title:hover{
-    color: #C2D4D6;
-}
-
-/*Body*/
 .titulo{
-    font-family: 'Caveat', cursive;
+    font-family: var(--font-family-cursive);
     font-size: 5rem;
     padding: 0.5em 1rem;
 }
 
 h3{
-    font-family: 'Caveat', cursive;
-    font-size: 3.5rem;
+    font-family: var(--font-family-cursive);
+    font-size: 4rem;
     padding: 1rem;
     text-align: center;
 }
 
+h4{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
 .container{
     margin: 1rem auto;
-    padding: 64px;
+    padding: 0.5rem;
     width: 90%;
 }
 
@@ -96,86 +56,42 @@ h3{
 
 .scrolling--wrapper div:hover{
     height: 75%;
-    color: #003852;
+    color: var(--base-color-c);
 }
 
-/*Presentation*/
-.presentation{
-    margin: 3rem auto;
+button{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     text-align: center;
+    padding: 0.5rem 1rem;
 }
 
-.container--presentation{
-    width:  70%;
-}
-
-.presentation--menu{ 
-    padding: 2rem;
-}
-
-.presentation--menu a span:first-child {
-    display: inline-block;
-    padding: 10px;
-}
-
-.presentation--menu a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.presentation--menu a span:last-child {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translateY(-100%);
-}
-
-.presentation--menu a span {
-    transition: transform 0.2s ease-out;
-}
-   
-.presentation--menu a:hover span:first-child {
-    transform: translateY(100%);
-}
-   
-.presentation--menu a:hover span:last-child {
-    transform: none;
-}
-
-.presentation--link{
-    color: #003852;
-    padding-left: 2rem;
-    text-decoration: none;
-}
-
-.presentation--foto{
-    border-radius: 100%;
-    width: 20%;
-}
-
-/*About Me*/
-.aboutme{
-    background: #9AD1D4;
-    text-align: left;
-}
-
-.aboutme--titulo{
-    display: inline-block;
-}
-
-/*Responsive*/
 /* For mobile phones: */
-@media (min-width: 640px){
+@media only screen and (max-width: 600px){
+    .headerM{
+        display: none;
+    }
     .headerM--nav{
         width: auto;
+    }
+
+    .formation--item{
+        min-width: 100%;
+    }
+
+    .aboutme>p{
+        width: 100%;
     }
 }
 
 /* For Medium devices: */
-@media screen and (max-width: 1007px){
+@media screen and (max-width: 992px){
+    .proyects--image{
+        height: auto;
+        width: 100%;
+    }
+
     .container{
         padding: 0%;
         width: 85%;
@@ -183,5 +99,14 @@ h3{
 
     .headerM--title{
         font-size: 1em;
+    }
+    
+    .presentation{
+        margin-top: 0;
+    }
+
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
 }

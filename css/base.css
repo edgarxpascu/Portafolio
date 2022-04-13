@@ -1,0 +1,16 @@
+:root{
+    /*Fonts*/
+    --font-family-body: "Montserrat", sans-serif;
+    --font-family-cursive: 'Caveat', cursive;
+    --font-family-firma: 'Satisfy', cursive;
+
+    /*Paleta de colores*/
+    --base-color-b: #DDE4E4;
+    --base-color-l: #002A3D;
+    --base-color-c: #003852;
+    --base-color-b2: #D0DADB;
+    --blanco: #F4F6F6;
+    --hc: #7D1538;
+    --hc1: #D58936;
+
+}

@@ -1,0 +1,56 @@
+/*Presentation*/
+.presentation{
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.container--presentation{
+    width:  70%;
+}
+
+.presentation--menu{ 
+    padding: 2rem;
+}
+
+.presentation--menu a span:first-child {
+    display: inline-block;
+    padding: 10px;
+}
+
+.presentation--menu a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.presentation--menu a span:last-child {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.presentation--menu a span {
+    transition: transform 0.2s ease-out;
+}
+   
+.presentation--menu a:hover span:first-child {
+    transform: translateY(100%);
+}
+   
+.presentation--menu a:hover span:last-child {
+    transform: none;
+}
+
+.presentation--link{
+    color:  var(--base-color-c);
+    padding-left: 2rem;
+    text-decoration: none;
+}
+
+.presentation--foto{
+    border-radius: 100%;
+    width: 20%;
+}

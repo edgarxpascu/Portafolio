@@ -1,0 +1,43 @@
+.proyects--flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyects--item{
+    position: relative;
+    margin:auto;
+    margin-bottom: 2rem;
+}
+
+.proyects--image{
+    height: 30rem;
+}
+
+.proyects--text{
+    background: var(--hc1);
+    border-radius: 4px;
+    left: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    text-align: center;
+    top: 1rem;
+}
+
+.proyects--btn--l {
+    background: var(--hc1);
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+}
+
+.proyects--btn--r{
+    background: var(--hc1);
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+}
+
+.proyects--btn--l:hover, .proyects--btn--r:hover{
+    background: var(--hc);
+}

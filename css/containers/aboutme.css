@@ -1,0 +1,32 @@
+/*About Me*/
+.aboutme{
+    text-align: left;
+}
+
+.aboutme--titulo{
+    display: inline-block;
+}
+
+.aboutme>p{
+    margin: 1rem;
+    line-height: 1.5rem;
+    width: 75%;
+}
+
+.firma{
+    font-family: var(--font-family-firma);
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.input-message-error {
+    display: none;
+}
+
+.input-container--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+  

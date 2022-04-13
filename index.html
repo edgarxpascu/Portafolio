@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="css/flexbox.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/fc033c938e.js" crossorigin="anonymous"></script>
     </head>
     <header class="headerM">
-        <div class="container">
+        <div class="headerM container">
             <nav class="headerM--nav 1">
                 <a class="headerM--nav--link" href="#aboutmeid">Sobre Mí</a>
                 <a class="headerM--nav--link" href="#skillsid">Skills</a>
@@ -27,13 +28,12 @@
                 <a class="headerM--nav--link" href="#contactid">Contacto</a>
             </nav>
         </div>
-        
     </header>
     <body>
         <section class="presentation">
             <div class="container--presentation">
                 <h2 class="titulo"> <b>Hola, soy Edgar</b> </h2>
-                <h3>Un mexicano joven ingeniero, curioso y comprometido. </h3>
+                <h3>Un mexicano joven ingeniero, curioso y comprometido </h3>
                 <div class="presentation--menu">
                     <div class="presentation--menulink"> 
                         <a class="presentation--link" href="https://github.com/edgarxpascu" target="_blank"> 
@@ -65,7 +65,7 @@
             <img src="images\edgar-1.jpg" alt="holi " class="presentation--foto">
         </section>
         <section id="skillsid" class="skills">
-            <div class="container skills">
+            <div class="skills container">
                 <h3>Skills</h3>
                 <div class="scrolling--wrapper">
                     <div><i class="fa-brands fa-html5 fa-3x"></i>HTML5</div>
@@ -84,35 +84,146 @@
             </div>
         </section>
         <section id="hobbiesid" class="hobbies">
-            <div class="container hobbies">
+            <div class="hobbies container">
                 <h3>Hobbies</h3>
                 <div class="scrolling--wrapper">
                     <div><i class="fa-solid fa-headphones-simple fa-3x"></i> Escuchar <br> Música</div>
                     <div><i class="fa-solid fa-book-open-reader fa-3x"></i> Leer</div>
                     <div><i class="fa-solid fa-cookie-bite fa-3x"></i> Comer</div>
                     <div><i class="fa-solid fa-music fa-3x"></i> Tocar <br> música</div>
-                    <div><i class="fa-solid fa-gamepad fa-3x"></i> Jugar videojuegos</div>
+                    <div><i class="fa-solid fa-gamepad fa-3x"></i> Jugar <br> videojuegos</div>
                 </div>
             </div>
         </section>
         <section id="formationid" class="formation">
-            
+            <div class="formation container">
+                <h3>Formación</h3>
+                <div class="formation--flexbox">
+                    <div class="formation--item">
+                        <div class="formation--picture">
+                            <img src="images\formation\unam.svg" alt="Escudo de la UNAM" class="formation--image">
+                        </div>
+                        <h4>Ingeniería Geomática</h4>
+                        <p>2021 - UNAM</p>
+                    </div>
+                    <div class="formation--item">
+                        <div class="formation--picture">
+                            <img src="images\formation\cambridge.svg" alt="Escudo de la Universidad de cambridge" class="formation--image" >
+                        </div>
+                        <h4>Ingles MCER B2</h4>
+                        <p>2016 - Cambridge University</p>
+                    </div>
+                    <div class="formation--item">
+                        <div class="formation--picture">
+                            <img src="images\formation\one.png" alt="Logo de Oracle ONE" class="formation--image">
+                        </div>
+                        <h4>Oracle Next Education</h4>
+                        <p>2022 - Alura</p>
+                    </div>
+                    <div class="formation--item">
+                        <div class="formation--picture">
+                            <img src="images\formation\microsoft.svg" alt="Escudo de la UNAM" class="formation--image">
+                        </div>
+                        <h4>Microsoft Office Specialist</h4>
+                        <p>2016 - Microsoft Certification</p>
+                    </div>
+                </div>
+                
+                
+            </div>
         </section>
         <section id="proyectsid" class="proyects">
-
+           <div class="proyects container">
+               <h3>Algunos Proyectos</h3>
+                <div class="proyects--flexbox">
+                    <div class="proyects--item">
+                        <img src="images/proyects/encriptador.png" alt="Imagen de página web" class="proyects--image">
+                            <div class="proyects--text">
+                                <h4>Encriptador de texto</h4>
+                                    <p>Challengue Oracle Codificador</p>
+                            </div>
+                            <a href="https://github.com/edgarxpascu/ChallengeOneLogicaLatam" target="_blank">
+                                <button class="proyects--btn--l">Repositorio <i class="fa-brands fa-github-square"></i></button> 
+                            </a> 
+                            <a href="https://edgarxpascu.github.io/ChallengeOneLogicaLatam/" target="_blank">
+                               <button class="proyects--btn--r"> Página <i class="fa-solid fa-globe"></i></button> 
+                            </a>
+                    </div>
+                    <div class="proyects--item">
+                        <img src="images/proyects/hangman.png" alt="Imagen de página web" class="proyects--image">
+                            <div class="proyects--text">
+                                <h4>Juego creado con HTML y Javascript</h4>
+                                    <p>Challengue Oracle Ahorcado</p>
+                            </div>
+                            <a href="https://github.com/edgarxpascu/Challenge-Oracle-ONE-Juego-Ahorcado" target="_blank"><button class="proyects--btn--l"> Repositorio <i class="fa-brands fa-github-square"></i></button></a>
+                            <a href="https://edgarxpascu.github.io/Challenge-Oracle-ONE-Juego-Ahorcado/"  target="_blank"><button class="proyects--btn--r"> Página <i class="fa-solid fa-globe"></i></button></a>
+                    </div>
+                    <div class="proyects--item">
+                        <img src="images/proyects/Agua.png" alt="Mapa de Ríos" class="proyects--image">
+                            <div class="proyects--text">
+                                <h4>30 Day Map Challengue 2021</h4>
+                                    <p>Elaborado con Python</p>
+                            </div>
+                            <a href="https://github.com/edgarxpascu/30DayMapChallenge2021" target="_blank"><button class="proyects--btn--l"> Repositorio <i class="fa-brands fa-github-square"></i></button></a>
+                            <button class="proyects--btn--r"> Página <i class="fa-solid fa-globe"></i></button>
+                    </div>
+                </div>
+           </div>
         </section>
         <section id="aboutmeid" class="aboutme">
-            <div class="container aboutme">
+            <div class="aboutme container">
                 <h3 class="aboutme--titulo">Acerca de mí</h3>
-                <p>Que gusto que quieras saber un poco más de mi. Nací en la Ciudad de México y ya han pasado más 24 años desde eso. De niño quise ser estudiar una ingeniería para entender pero sobre todo resolver los problemas del mundo. La vida me dio la oportunidad de hacerlo, y estudié Ingeniería Geomática en la Universidad Nacional Autónoma de México. </p>
-                <p>Me apasiona el área de la tecnología y agradezco la oportunidad de poder estar viviendo  ser parte de esta revolución digital. No concibo mi vida sin música, por lo que es común que me encuentres escuchando música. Me gusta cultivar mi mente, convivir con mi familia y amigos.</p>
+                    <p>Me alegra que quieras saber un poco más de mi. Nací en la Ciudad de México y ya han pasado más 24 años desde eso. De niño quise ser estudiar una ingeniería para entender pero sobre todo resolver los problemas del mundo. La vida me dio la oportunidad de hacerlo, y estudié Ingeniería Geomática en la Universidad Nacional Autónoma de México.</p>
+                    <p>Me apasiona el área de la tecnología y agradezco la oportunidad de poder estar viviendo  ser parte de esta revolución digital. No concibo mi vida sin música, por lo que es común que me encuentres escuchando música. Me gusta cultivar mi mente, convivir con mi familia y amigos.</p>
+                    <p class="firma">Edgar Zavaleta</p>
             </div>
         </section>
         <section id="contactid" class="contact">
-            <!-- <li class="headerM--item"><a class="headerM--nav--link correo" href="mailto:m.edgarpzavaleta@gmail.com">edgarpzavaleta <i class="fa-regular fa-envelope"></i></a></li> -->
+            <div class="contact container">
+                <h3 class="contact--titulo">Contacto</h3>
+                <form id="form" action="https://formspree.io/f/mrgjygep" method="POST">
+                    <div class="row">
+                        <div class="col-25"><label for="nombre">Nombre</label></div>
+                        <div class="col-75">
+                            <input class="input" type="text" name="nombre" placeholder="Tu nombre" required data-tipo="nombre">
+                            <span class="input-message-error"> Este campo no es valido</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"> <label for="email">Correo Electrónico</label></div>
+                        <div class="col-75">
+                            <input class="input" type="email" name="email" placeholder="Correo" required data-tipo="email">
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"><label for="asunto">Asunto</label></div>
+                        <div class="col-75"><input type="text" name="asunto" placeholder="Asunto"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"><label for="mensaje">Mensaje</label></div>
+                        <div class="col-75">
+                            <textarea class="input" name="mensaje" placeholder="Mensaje" required required data-tipo="mensaje"></textarea>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <input type="submit" value="Enviar Mensaje" formtarget="_blank">
+                    </div>    
+                </form>
+            </div> 
         </section>
+        <footer>
+            <div class="footer container">
+                <p>Elaborado por: Edgar Zavaleta <br> 2022 </p>
+                <ul class="footer--social">
+                    <li><a class="footer--link" href="https://www.linkedin.com/in/edgarpzm" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg"></i></a></li>
+                    <li><a class="footer--link" href="https://www.instagram.com/edgareslahostia/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+                    <li><a class="footer--link" href="https://github.com/edgarxpascu" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a></li>
+                    <li><a class="footer--link" href="https://www.facebook.com/edgareslahostia/" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
-    <footer>
-
-    </footer>
+    <script src="js/app.js"></script>
 </html>

@@ -1,0 +1,66 @@
+/*Contact*/
+.contact{
+    background: var(--base-color-b2);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+textarea{
+    height:10rem;
+}
+
+input[type=text], input[type=email], textarea {
+    font-family: var(--font-family-body);
+    font-weight: 300;
+    font-size: 110%;
+    background: var(--blanco);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 12px 20px;
+    resize: vertical;
+    width: 100%;
+}
+
+input[type=submit]{
+    background-color: #6F8E9B;
+    border: none;
+    border-radius: 4px;
+    color: var(--blanco);
+    cursor: pointer;
+    float: right;
+    margin: 4px 2px;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+
+input[type=submit]:hover{
+    background-color: var(--hc);
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.col-25{
+    float: left;
+    margin-top: 6px;
+    width: 25%;
+}
+  
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
